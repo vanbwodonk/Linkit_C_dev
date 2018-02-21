@@ -13,8 +13,9 @@ int main(int argc, char **argv)
 
     // for LinkIt MT7688 use WiFi LED
     gpio = mraa_gpio_init(44);
-
-    fprintf(stdout, "GPIO BLINK EXAMPLE \nLibmraa Version: %s\nRunning on %s (Ctrl+C to exit)\n", mraa_get_version(), board_name);
+    fprintf(stdout, "---------------------------------\n");
+    fprintf(stdout, "- GPIO BLINK EXAMPLE \n- Libmraa Version: %s\n- Running on %s (Ctrl+C to exit)\n", mraa_get_version(), board_name);
+    fprintf(stdout, "---------------------------------\n\n");
 
     if (gpio == NULL)
     {
